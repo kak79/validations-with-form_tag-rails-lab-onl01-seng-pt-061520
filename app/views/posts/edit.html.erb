@@ -20,7 +20,7 @@
   
     <div class="field<% 'field_with_errors' if @post.errors[:category].any? %>">
     <%= label_tag "category", "Category" %>
-    <p>Must be either "Fiction" or "Non-Fiction".</p>
+    <p>"Non-Fiction"</p>
     <%= text_field_tag "category", @post.category %>
     <p>
       Please type carefully as our top scientists are working around the clock to

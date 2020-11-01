@@ -30,7 +30,7 @@ class PostsController < ApplicationController
 
   def find_post
     @post = Post.find_by_id(params[:id])
-    redirect_to post_path(@post)
+    redirect_to post_path(@post) if !@post
   end
 
   def post_params
