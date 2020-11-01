@@ -28,7 +28,7 @@ class AuthorsController < ApplicationController
 
   def find_author
     @author = Author.find_by_id(params[:id])
-    redirect_to author_path(@author)
+    redirect_to author_path if !@author
   end
 
   def author_params
